@@ -8,30 +8,107 @@
   
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  Score
-  Rules
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="./styles/modal.css">
 
-  You Picked
-  The House Picked
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
 
-  You Win
-  You Lose
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  Play Again
+  <!-- ANIMATE.CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <!-- JAVASCRIPT -->
+  <script defer type="module" src="./js/main.js"></script>
+  <script defer type="module" src="./js/computer.js"></script>
+  <script defer type="module" src="./js/rules.js"></script>
+  <script defer type="module" src="./js/modal.js"></script>
 <body>
 
+  <div class="main-container">
+    <section class="score">
+      <div class="options">
+        <span>ROCK</span>
+        <span>PAPER</span>
+        <span>SCISSORS</span>
+      </div>
+      <div class="panel">
+        <span class="score-t">SCORE</span>
+        <span class="score-v">0</span>
+      </div>
+    </section>
+    <section class="step-1">
+      <div class="box">
+        <div id="paper" class="option paper">
+          <img src="./images/icon-paper.svg">
+        </div>
+        <div id="scissors" class="option scissors">
+          <img src="./images/icon-scissors.svg">
+        </div>
+        <div id="rock" class="option rock">
+          <img src="./images/icon-rock.svg">
+        </div>
+      </div>
+    </section>
+    <section class="step-2 no-show">
+      <div class="user" id="user">
+        <span>YOU PICKED</span>
+        <div id="userOp" class="option paper">
+          <!-- <div class="mega-shadow">
+            <div class="s-1"></div>
+            <div class="s-2"></div>
+            <div class="s-3"></div>
+          </div> -->
+          <img src="./images/icon-paper.svg">
+        </div>
+      </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="result" id="result">
+        <span class="win-lose">
+          YOU
+        </span>
+        <button class="play-again" id="btn-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="machine" id="machine">
+        <span>THE HOUSE PICKED</span>
+        <!-- <div class="no-option"></div> -->
+        <div id="machineOp" class="option">
+          <img>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/dan-ec05">Daniel Camacho</a>.
+      </div> -->
+      <button class="btn-rules" id="btn-rules">RULES</button>
+    </footer>
+  </div>
+
+  <div class="rule-modal" id="modal">
+
+    <div class="content">
+      <header>
+        <h2 class="title">RULES</h2>
+        <i class="bi bi-x" id="the-x-close"></i>
+      </header>
+      <section>
+        <img src="./images/image-rules.svg" class="img-rules">
+      </section>
+      <footer id="footer-modal">
+        <i class="bi bi-x" id="the-x-close-f"></i>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
