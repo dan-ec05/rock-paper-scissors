@@ -33,6 +33,9 @@
 
 
 @media screen and (width < 500px){
+    body{
+        overflow: hidden;
+    }
     .main-container > *{
         width: 90%;
     }
