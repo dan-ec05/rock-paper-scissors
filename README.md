@@ -47,7 +47,9 @@ One thing I want to keep doing is coding using Javascript. I think it has a lot 
 ### Useful resources
 
 [Animate.css](https://animate.style/) - This library helped me add animations to elements and make the web a bit more dynamic.
+
 [Google Fonts](https://fonts.google.com/) - Where I get the fonts I will use, what else can I say?
+
 [Bootstrap icons](https://icons.getbootstrap.com/) - Icon library I use to add some icons throughout the web.
 
 ## Author
